@@ -38,6 +38,7 @@
     label,
     input {
       display: inline-block !important;
+      width: auto;
     }
 
     label {
@@ -169,7 +170,7 @@
       }
     }
 
-    select {
+    select:not([multiple]) {
       @extend .custom-select;
       @extend .custom-select-sm;
       -moz-appearance: none;

@@ -1,8 +1,22 @@
 // bootstrap
-$base: #ff7043;
-$primary: darken($base, 25%);
-$font-family-sans-serif: 'Dosis', sans-serif !default;
+$base: $hel-summer;
+$primary: black;
+$secondary: $hel-tram;
+$success: $hel-tram;
+$font-family-sans-serif: $hel-grotesk;
+$link-color: $hel-tram;
+$link-hover-color: darken($hel-tram, 7%);
 
+$theme-colors: (
+  "primary":    $hel-black,
+  "secondary":  $hel-tram,
+  "success":    $hel-tram,
+  "info":       $cyan,
+  "warning":    $yellow,
+  "danger":     $red,
+  "light":      $hel-light,
+  "dark":       $hel-dark
+);
 
 // fonts
 $h1-size: 1.6rem;
@@ -13,7 +27,7 @@ $h3-size: 1.2rem;
 $transparent: transparent;
 
 // navbar
-$navbar-bg: #37474f;
+$navbar-bg: $hel-tram;
 $navbar-link-color: #fff;
 $navbar-dropdown-link-color: #000;
 $navbar-link-color-hover: #ff7043;
@@ -21,22 +35,22 @@ $navbar-color: #fff;
 $navbar-mobile-pane-bg: #263238;
 
 // footer
-$footer-bg: #b3c4cd;
+$footer-bg: $base;
 $footer-link-color: #37474f;
 $footer-link-color-hover: $primary;
 $footer-color: #333;
 $footer-border-color: #fff;
 
 // menu
-$menu-bg: #263238;
+$menu-bg: black;
 $menu-color: #fff;
 $menu-link-color: #ccc;
 $menu-link-hover-color: #fff;
 $menu-li-hover-bg: darken($menu-bg, 2%);
 $menu-li-border-color: #444;
-$menu-active-voice-bg: darken($primary, 10%);
+$menu-active-voice-bg: $secondary;
 $menu-active-voice-border-color: #f5f5f5;
-$menu-mobile-title-bg: #37474f;
+$menu-mobile-title-bg: black;
 $menu-mobile-title-color: #fff;
 $menu-mobile-title-border-color: rgba(255, 255, 255, .2);
 $menu-mobile-back-bg: darken($menu-bg, 5%);
@@ -53,10 +67,10 @@ $dashboard-bg: #f5f5f5;
 $dashboard-title-bg: #fff;
 $dashboard-title-border-color: #ccc;
 $dashboard-module-bg: #fff;
-$dashboard-module-border-color: #ccc;
-$dashboard-caption-bg: #f6f6f6;
+$dashboard-module-border-color: #eee;
+$dashboard-caption-bg: $hel-summer;
 $dashboard-caption-color: #000;
-$dashboard-icon-color: #f90;
+$dashboard-icon-color: $hel-summer;
 
 // breadcrumbs
 $breadcrumbs-bg: #fcfcfc;
@@ -92,7 +106,7 @@ $collapse-title-bg: #fafafa;
 $collapse-title-border-color: #ccc;
 $state-danger-bg: #f2dede;
 $field-row-error-bg: lighten($state-danger-bg, 5%);
-$fieldset-title-bg: lighten($base, 30%);
+$fieldset-title-bg: $base;
 $inline-related-title-bg: #fafafa;
 $inline-related-title-border-color: #eee;
 $inline-related-title-border-top-color: #eee;

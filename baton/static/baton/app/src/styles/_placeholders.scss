@@ -278,7 +278,9 @@
   }
 
   select[multiple] {
+    @extend .custom-select;
     display: inline-block;
+    border-width: 2px !important;
   }
 
   select:not([multiple]) {
@@ -415,7 +417,7 @@
     background: $fieldset-title-bg;
     font-size: $h2-size;
     margin-bottom: 0;
-    padding: 5px 10px;
+    padding: 1em;
 
     + .form-row {
       margin-top: 15px;

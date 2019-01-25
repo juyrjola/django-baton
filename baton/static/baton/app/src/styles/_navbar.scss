@@ -2,7 +2,6 @@
 #header {
   @extend .navbar;
   @extend .navbar-dark;
-  @extend .bg-dark;
   @extend .navbar-expand-md;
 
   align-items: center;
@@ -74,7 +73,7 @@
 }
 
 #site-name {
-  // @extend .nav-item;
+  padding: 0.25em 0;
 }
 
 #user-tools {

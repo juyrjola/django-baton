@@ -1,10 +1,10 @@
-@import 'variables';
 @import "~bootstrap/scss/functions";
 @import '~bootstrap/scss/variables';
 @import '~open-city-design/src/scss/helsinki/variables';
-@import '~bootstrap/scss/bootstrap';
+@import 'variables';
 $fa-font-path: '~font-awesome/fonts';
 @import '~font-awesome/scss/font-awesome';
+@import '~bootstrap/scss/bootstrap';
 @import 'placeholders';
 @import 'main';
 @import 'login';

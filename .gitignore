@@ -10,3 +10,4 @@ dist/
 tags
 django_baton.egg-info/
 .ropeproject
+.DS_Store

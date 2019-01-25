@@ -4,12 +4,12 @@ from django.utils.html import mark_safe
 from django.utils.translation import ugettext as _
 
 default_config = {
-    'SITE_TITLE': 'Baton',
-    'SITE_HEADER': '<img src="%sbaton/img/logo.png" />' % settings.STATIC_URL,
+    'SITE_TITLE': 'Aplans',
+    'SITE_HEADER': '<img style="width: 99px; height: 46px;" src="%sbaton/img/helsinki-logo-white.svg" />' % settings.STATIC_URL,
     'INDEX_TITLE': _('Site administration'),
-    'SUPPORT_HREF': 'https://github.com/otto-torino/django-baton/issues',
-    'COPYRIGHT': 'copyright © 2017 <a href="https://www.otto.to.it">Otto srl</a>', # noqa
-    'POWERED_BY': '<a href="https://www.otto.to.it">Otto srl</a>',
+    'SUPPORT_HREF': 'https://github.com/city-of-helsinki/aplans',
+    'COPYRIGHT': 'City of Helsinki', # noqa
+    'POWERED_BY': 'Hiilineutraali Helsinki',
     'CONFIRM_UNSAVED_CHANGES': True,
     'SHOW_MULTIPART_UPLOADING': True,
 }
@@ -28,3 +28,4 @@ def get_config(key):
         return mark_safe(value)
 
     return value
+ 
