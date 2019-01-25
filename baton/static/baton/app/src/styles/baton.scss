@@ -1,4 +1,7 @@
 @import 'variables';
+@import "~bootstrap/scss/functions";
+@import '~bootstrap/scss/variables';
+@import '~open-city-design/src/scss/helsinki/variables';
 @import '~bootstrap/scss/bootstrap';
 $fa-font-path: '~font-awesome/fonts';
 @import '~font-awesome/scss/font-awesome';
@@ -21,3 +24,5 @@ $fa-font-path: '~font-awesome/fonts';
 @import 'calendarclock';
 @import 'analytics';
 @import 'filer';
+@import '~open-city-design/src/scss/helsinki/mixins';
+@import '~open-city-design/src/scss/helsinki/custom-styles';

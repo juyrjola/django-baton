@@ -289,6 +289,10 @@
     width: auto !important;
   }
 
+  select.admin-autocomplete {
+    min-width: 20em;
+  }
+
   .radiolist {
     list-style-type: none;
     padding-left: 0;
@@ -353,7 +357,7 @@
       margin-bottom: 15px;
       margin-left: auto;
       order: 1;
-      width: 200px;
+      min-width: 200px;
 
       @include media-breakpoint-up(md) {
         margin-bottom: 0;
