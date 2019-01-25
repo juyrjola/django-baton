@@ -29,11 +29,12 @@
     }
 
     > div {
-      align-items: flex-start;
-      display: flex;
-      flex: 1;
-      flex-direction: row;
-      flex-wrap: wrap;
+      width: 100%;
+      //align-items: flex-start;
+      //display: flex;
+      //flex: 1;
+      //flex-direction: row;
+      //flex-wrap: wrap;
 
       &.checkbox-row {
         input {
@@ -51,6 +52,10 @@
       }
     }
 
+    iframe {
+      border: 2px solid $hel-black;
+    }
+  
     .date-icon {
       &::before {
         @extend %font-awesome;
@@ -243,32 +248,25 @@
   }
 
   label {
-    @extend .pr-3;
-    flex-basis: 100%;
-    text-align: left;
-
-    @include media-breakpoint-up(sm) {
-      flex-basis: 20%;
-      text-align: right;
-    }
-
-    @include media-breakpoint-up(lg) {
-      flex-basis: 10%;
-      text-align: right;
-    }
+    display: block;
+    @extend .mb-2;  
   }
 
   .required {
     font-weight: bold;
   }
 
-  input[type=text],
   input[type=number],
   input[type=email],
   input[type=date],
   select[multiple] {
     @extend .form-control;
     width: auto;
+  }
+
+  input[type=text] {
+    @extend .form-control;
+    max-width: 640px;
   }
 
   textarea {
@@ -309,8 +307,15 @@
   .help {
     @extend .form-text;
     @extend .text-muted;
-    @extend .ml-3;
+    font-size: 75%;
+    //@extend .ml-3;
     font-style: italic;
+  }
+
+  .readonly {
+    padding: 0.5em;
+    background-color: $gray-100;
+    color: $gray-600;
   }
 
   img.help {
@@ -322,7 +327,7 @@
     display: block;
 
     h2 {
-      @extend .p-2;
+      @extend .p-1;
       background: $collapse-title-bg;
       border: 1px solid $collapse-title-border-color;
       font-size: $h2-size;
@@ -456,6 +461,7 @@
     // datetime fields should not be blocks because are followed by the calendar icon
     .vDateField {
       display: inline-block;
+      max-width: 160px;
     }
 
     .errorlist {
